@@ -2,5 +2,5 @@
   "tabWidth": 2,
   "useTabs": false,
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindConfig": "./styles/tailwind.config.js"
+  "tailwindConfig": "./tailwind.config.js"
 }
