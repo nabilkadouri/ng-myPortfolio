@@ -20,6 +20,19 @@
   }
 }
 
+/* Rectangle 3 */
+.fond{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: radial-gradient(76.04% 106.72% at 88.26% 29.29%, rgba(255, 255, 255, 0) 37.85%, #000000 61.76%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+
+
+
 
 
 
