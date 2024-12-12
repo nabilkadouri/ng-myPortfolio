@@ -1,62 +1,104 @@
-<section class="relative bg-[url('/uploads/fond.webp')] md:h-[800px] h-[500px] bg-cover bg-center bg-no-repeat ">
-  <!-- Effet lumineux -->
-  <div class="fond"></div>
-
-  <!-- Contenu principal -->
-  <header class="sticky  top-0 left-0 w-full z-50">
-    <nav class="md:mx-auto md:max-w-screen-xl rounded-b-2xl bg-nav bg-opacity-70 backdrop-blur-md shadow-md h-auto">
-      <div class="md:flex md:justify-between">
-        <div class="flex flex-wrap items-center justify-between py-3 pe-3">
-          <a href="https://flowbite.com/">
-            <img src="/uploads/portfolio.png" class="h-10" alt="Portfolio Logo" />
-          </a>
-          <button data-collapse-toggle="navbar-default" type="button"
-            class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
-            aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-8 md:p-0 rtl:space-x-reverse ms-4">
-              <li>
-                <a href="#" class="block rounded bg-bleu px-3 py-2 text-white md:bg-transparent md:p-0 md:text-bleu"
-                  aria-current="page">Accueil</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu">Projets</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu">Expériences</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu">Hard skills</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu">Soft skills</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu">Hobbies</a>
-              </li>
-              <li  >
-                <a href="#"
-                  class="block rounded px-3 py-2 text-bleu hover:bg-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu md:hidden">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="md:flex md:items-center hidden py-2 px-3 rounded-2xl border border-bleu me-8 my-3">
-          <a href="#"
-            class="rounded hover:bg-bleu md:hover:bg-transparent md:hover:text-white text-bleu font-medium">Contactez-moi</a>
+<header class="sticky left-0 top-0 z-50 w-full bg-transparent">
+  <nav
+    class="h-auto rounded-b-2xl bg-nav bg-opacity-50 shadow-md backdrop-blur-md md:mx-auto md:max-w-screen-xl"
+  >
+    <div class="md:flex md:justify-between">
+      <div class="flex flex-wrap items-center justify-between py-3 pe-3">
+        <a href="https://flowbite.com/">
+          <img src="/uploads/portfolio.png" class="h-10" alt="Portfolio Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="ms-4 mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-2 lg:space-x-8 md:p-0 rtl:space-x-reverse"
+          >
+            <li>
+              <a
+                href="#"
+                class="block rounded bg-bleu px-3 py-2 text-white md:bg-transparent md:p-0 md:text-bleu"
+                aria-current="page"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Projets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Expériences</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Hard skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Soft skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Hobbies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded px-3 py-2 text-bleu hover:bg-white md:hidden md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-  </header>
-</section>
+      <div
+        class="my-3 me-8 hidden rounded-2xl border-2 border-bleu px-3 py-2 md:flex md:items-center"
+      >
+        <a
+          href="#"
+          class="rounded font-medium text-bleu hover:bg-bleu md:hover:bg-transparent md:hover:text-white"
+          >Contactez-moi</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>
+
+<app-hero></app-hero>
