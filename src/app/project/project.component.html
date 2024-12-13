@@ -1,1 +1,64 @@
-<p>project works!</p>
+<section>
+  <h2 class="m-auto lg:max-w-screen-xl px-7 font-titre font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] leading-snug sm:leading-normal md:leading-relaxed mb-3 sm:mb-3 md:mb-5">A découvrir : Projets du moment</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5  m-auto lg:max-w-screen-xl px-7 ">
+    <div
+      *ngFor="let card of cards"
+      class="relative group shadow-lg rounded-lg overflow-hidden transition-all duration-300  "
+    >
+      <!-- Image -->
+      <img
+        [src]="card.image"
+        alt="{{ card.title }}"
+        class=" object-cover transition-transform duration-500 group-hover:scale-125  "
+      />
+  
+      <!-- Content (hidden by default, appears on hover) -->
+      <div
+        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 px-7 space-x-2 pt-10 "
+      >
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] font-titre font-bold ps-2 ">{{ card.title }}</h3>
+  
+        <!-- SVG Icons -->
+        <div class="flex items center gap-2  ">
+          <img
+            *ngFor="let icon of card.svgIcons"
+            [src]="icon"
+            alt="SVG Icon"
+            class="w-6 sm:w-4 md:w-20 lg:w-20 "
+          />
+        </div>
+  
+        <!-- disponibility -->
+        <div class="flex items-center ">
+          <img
+          [src]="card.icone" 
+          alt="Icone disponibility"
+          class="sm:w-3 md:w-6 lg:w-18  "
+        />
+          <p class="text-[10px] sm:text-[12px] md:text-[14px] font-texte ps-1 font-medium">{{ card.disponibility }}</p>
+          
+        </div>
+  
+        <!-- Year, Duration, Audience -->
+        <div class="flex items-center  text-[10px] sm:text-[10px] md:text-sm font-texte font-normal my-2 ">
+          <span class="">{{ card.year }}</span>
+          <span class="mx-2">{{ card.duration }}</span>
+          <span class="bg-nav rounded-md p-1 ms-10">{{ card.audience }}</span>
+        </div>
+  
+        <!-- Description -->
+        <p class="text-[9px] sm:text-[10px] md:text-sm font-texte my-3">{{ card.description }}</p>
+  
+        <!-- GitHub Link -->
+        <a
+          [href]="card.github"
+          target="_blank"
+          class="text-blue-400 underline hover:text-blue-300 text-[8px] sm:text-[10px] md:text-[12px] font-texte font-medium "
+        >
+          {{ card.github }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
