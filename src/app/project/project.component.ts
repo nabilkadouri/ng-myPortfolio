@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CARDS } from '../data/card-data';
+import { CARDS_PROJECTS } from '../data/card-data';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectComponent {
 
-  cards = CARDS;
+  projets = CARDS_PROJECTS;
 }

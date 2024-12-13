@@ -1,5 +1,5 @@
 <section class=" m-auto lg:max-w-screen-xl px-7 ">
-  <div class="bg-black py-8 h-[768px] flex flex-col ">
+  <div class="bg-black py-8 flex flex-col ">
     <h2 class=" font-titre font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] leading-snug sm:leading-normal md:leading-relaxed mb-3 sm:mb-3 md:mb-5">Hard skills populaires</h2>
     <div class="relative w-full  overflow-hidden">
       <!-- Carrousel Wrapper -->
@@ -7,17 +7,20 @@
         class="flex transition-transform duration-100"
         [style.transform]="'translateX(-' + (currentIndex * 20 ) + '%)'"
       >
-        <!-- Images dynamiques -->
-        <div
-          *ngFor="let image of repeatedImages"
-          class="flex-shrink-0 size-[130px] sm:size-[130px] md:size-[200px] lg:size-[250px] mx-1 md:mx-3 lg:mx-5"
-        >
-          <img
-            [src]="image.src"
-            [alt]="image.alt"
-            class="w-full h-auto object-cover rounded-lg shadow-md"
-          />
-        </div>
+      <div
+  *ngFor="let image of repeatedImages"
+  class="flex-shrink-0 w-[130px] sm:w-[130px] md:w-[200px] lg:w-[250px] mx-1 md:mx-3 lg:mx-4 bg-gray-800 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] border border-gray-700"
+>
+  <img
+    [src]="image.src"
+    [alt]="image.alt"
+    class="w-full h-auto object-cover rounded-lg"
+  />
+</div>
+
+    
+    
+
       </div>
     </div>
   </div>
