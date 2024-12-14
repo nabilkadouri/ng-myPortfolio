@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CARDS_SOFT } from '../data/card-data';
+import { CARDS_SOFTSKILLS } from '../data/card-data';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './soft-skill.component.css'
 })
 export class SoftSkillComponent {
-  softSkills = CARDS_SOFT;
+  softSkills = CARDS_SOFTSKILLS;
 
 }

@@ -1,28 +1,23 @@
-<section>
+<section  class=" mb-[50px] sm:mb-[40px] md:mb-[50px] lg:mb-[60px]">
   <h2
-    class="m-auto lg:max-w-screen-xl px-7 font-titre font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] leading-snug sm:leading-normal md:leading-relaxed mb-3 sm:mb-3 md:mb-5">
+    class="m-auto lg:max-w-screen-xl px-7 font-titre font-bold text-[24px] sm:text-[26px] md:text-[28px] lg:text-[36px] my-2 sm:my-4 md:my-6">
     Soft skills les mieux notés</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10  m-auto lg:max-w-screen-xl px-7 ">
+  <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]  m-auto lg:max-w-screen-xl px-7 ">
     <div *ngFor="let softskill of softSkills"
       class="relative group  overflow-hidden transition-all duration-300  bg-bleu rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] border border-nav">
       <img [src]="softskill.image" alt="{{ softskill.title }}"
-        class=" object-cover transition-transform duration-500 group-hover:scale-125  " />
-
+        class=" object-cover transition-transform duration-500 group-hover:scale-125" />
       <div class="absolute inset-0 hover:bg-degrader">
-
-        <div class="p-2 -transform translate-y-50 group-hover:translate-y-0 transition-transform duration-500  pt-10 h-full flex-col justify-end hidden group-hover:flex">
-          
-          <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] font-titre font-bold w-20 mb-3 ">{{
+        <div
+          class="p-2 -transform translate-y-50 group-hover:translate-y-0 transition-transform duration-500  pt-10 h-full flex-col justify-end hidden group-hover:flex">
+          <h3 class="font-titre font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[26px] my-2 sm:my-4 md:my-6 flex items-center h-full w-20 mb-3 ">{{
             softskill.title }}</h3>
-
           <div class="flex items-center ">
             <img [src]="softskill.icone" alt="Icone disponibility" class="sm:w-3 md:w-6 lg:w-18  " />
             <p class="text-[10px] sm:text-[12px] md:text-[14px] font-texte font-medium ">{{ softskill.disponibility }}
             </p>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>

@@ -25,7 +25,7 @@ export const CARDS_PROJECTS= [
   },
 ];
 
-export const CARDS_SOFT = [
+export const CARDS_SOFTSKILLS = [
   {
     image: '/uploads/aisance.webp',
     title: `AISANCE RELATIONNELLE`,
@@ -62,4 +62,23 @@ export const CARDS_SOFT = [
     icone: '/svg/valid.svg',
     disponibility: 'Inclus dans Portfolio prime',
   }
+];
+
+export const CARDS_HOBBY = [
+  {
+    image: '/uploads/equipe.webp',
+    title: `Educateur sportif`,
+  },
+  {
+    image: '/uploads/gaming.webp',
+    title: `Gaming`,
+  },
+  {
+    image: '/uploads/virtuel.webp',
+    title: `Réalité virtuel`,
+  },
+  {
+    image: '/uploads/sport.webp',
+    title: `Vélo et Natation`,
+  },
 ];
