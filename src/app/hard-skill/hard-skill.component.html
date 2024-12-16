@@ -3,10 +3,10 @@
       class=" font-titre font-bold text-[24px] sm:text-[26px] md:text-[28px] lg:text-[36px]  pb-6 ps-7 " >
       Hard skills populaires</h2>
   <div class=" ">
-    <div class="relative w-full overflow-hidden">
+    <div class="relative w-full carousel-container overflow-hidden">
       <!-- Carrousel Wrapper -->
-      <div class="flex transition-transform duration-100 gap-[20px]"
-        [style.transform]="'translateX(-' + (currentIndex * 4) + '%)'">
+      <div  class="flex transition-transform duration-700 ease-in-out gap-[20px] carousel"
+        [style.transform]="'translateX(-' + (currentIndex * 23) + '%)'">
         <div *ngFor="let image of repeatedImages"
           class="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px]  bg-gray-800 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] border border-gray-700">
           <img [src]="image.src" [alt]="image.alt" class="w-full h-auto object-cover rounded-lg" />

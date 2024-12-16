@@ -6,3 +6,13 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.carousel {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}

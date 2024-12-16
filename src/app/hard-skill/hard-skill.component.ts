@@ -15,20 +15,29 @@ export class HardSkillComponent implements OnInit {
   currentIndex = 0;
   direction = 1;
   intervalId: any;
+  isTransitioning = false;
 
   ngOnInit() {
-    this.repeatedImages = this.repeatImages(3); // Répéter les images 3 fois
+    this.repeatedImages = this.repeatImages(2); // Répéter les images 3 fois
     this.startAutoSlide();
   }
 
   startAutoSlide() {
     this.intervalId = setInterval(() => {
+      if (this.isTransitioning) return; // Éviter d'enchaîner les animations
+      this.isTransitioning = true;
+
       this.currentIndex += this.direction;
 
-      if (this.currentIndex >= this.repeatedImages.length -6 || this.currentIndex <= 0) {
+      // Inverser la direction si on atteint les bords
+      if (this.currentIndex >= this.repeatedImages.length - 6 || this.currentIndex <= 0) {
         this.direction *= -1;
       }
-    }, 1500);
+
+      setTimeout(() => {
+        this.isTransitioning = false; // Fin de la transition
+      }, 700); // Correspond à la durée CSS de la transition
+    },2500); // Temps entre chaque défilement
   }
 
   repeatImages(times: number) {
