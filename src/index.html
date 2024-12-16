@@ -9,18 +9,41 @@
 </head>
 <body class="bg-black text-white">
   <app-root></app-root>
-  <!-- Indicateur de taille de la fenêtre -->
-<div
-class="fixed bottom-0 right-0 m-2 flex items-center space-x-2 rounded border border-black bg-black p-2 text-sm text-white"
->
-<img class="mx-auto h-5 w-auto" src="favicon.ico" alt="Favicon" />
-<span class="ml-1 sm:hidden md:hidden lg:hidden xl:hidden"
-  >default (&lt; 640px)</span
->
-<span class="ml-1 hidden font-extrabold sm:inline md:hidden">SM</span>
-<span class="ml-1 hidden font-extrabold md:inline lg:hidden">MD</span>
-<span class="ml-1 hidden font-extrabold lg:inline xl:hidden">LG</span>
-<span class="ml-1 hidden font-extrabold xl:inline">XL</span>
+ 
+<!-- Info Tailwind Responsive -->
+<div id="tailwind-breakpoint-info" class="fixed bottom-2 right-2 text-xs text-gray-600 bg-gray-100 p-2 rounded shadow z-50">
+  Taille actuelle : <span id="tailwind-breakpoint-label">Chargement...</span>
 </div>
+
+<script>
+  // Met à jour la taille actuelle de l'écran en fonction des points d'arrêt Tailwind
+  function updateTailwindBreakpoint() {
+    const width = window.innerWidth;
+    const label = document.getElementById('tailwind-breakpoint-label');
+
+    if (width < 640) {
+      label.textContent = "default (<640px)";
+    } else if (width >= 640 && width < 768) {
+      label.textContent = "sm (≥640px)";
+    } else if (width >= 768 && width < 1024) {
+      label.textContent = "md (≥768px)";
+    } else if (width >= 1024 && width < 1280) {
+      label.textContent = "lg (≥1024px)";
+    } else if (width >= 1280 && width < 1536) {
+      label.textContent = "xl (≥1280px)";
+    } else {
+      label.textContent = "2xl (≥1536px)";
+    }
+  }
+
+  // Appeler la fonction à l'initialisation
+  updateTailwindBreakpoint();
+
+  // Ajouter un écouteur pour les changements de taille de fenêtre
+  window.addEventListener('resize', updateTailwindBreakpoint);
+</script>
+
+
+  
 </body>
 </html>

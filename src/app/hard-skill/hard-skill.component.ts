@@ -21,7 +21,6 @@ export class HardSkillComponent implements OnInit {
     this.startAutoSlide();
   }
 
-
   startAutoSlide() {
     this.intervalId = setInterval(() => {
       this.currentIndex += this.direction;

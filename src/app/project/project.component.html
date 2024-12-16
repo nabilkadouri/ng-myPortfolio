@@ -1,5 +1,5 @@
 <section class=" mb-[50px] sm:mb-[40px] md:mb-[50px] lg:mb-[60px]">
-  <h2 class="m-auto lg:max-w-screen-xl px-7 font-titre font-bold text-[24px] sm:text-[26px] md:text-[28px] lg:text-[36px] my-2 sm:my-4 md:my-6">A découvrir : Projets du moment</h2>
+  <h2 class="m-auto lg:max-w-screen-xl px-7 font-titre font-bold text-[24px] sm:text-[26px] md:text-[28px] lg:text-[36px] pb-6">A découvrir : Projets du moment</h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px]  m-auto lg:max-w-screen-xl px-7 ">
     <div
       *ngFor="let projet of projets"
@@ -14,19 +14,20 @@
   
       <!-- Content (hidden by default, appears on hover) -->
       <div
-        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 px-7 space-x-2 pt-10 "
+        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 p-3 h-full"
       >
-        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] font-titre font-bold ps-2 ">{{ projet.title }}</h3>
+        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[25px] font-titre font-bold mb-3 text-center ">{{ projet.title }}</h3>
   
         <!-- SVG Icons -->
-        <div class="flex items center gap-2  ">
+        <div class="flex items-center gap-2 mb-2">
           <img
             *ngFor="let icon of projet.svgIcons"
             [src]="icon"
             alt="SVG Icon"
-            class="w-6 sm:w-4 md:w-20 lg:w-20 "
+            class="w-[15px] sm:w-[16px] md:w-[20px] lg:w-[24px] h-auto"
           />
         </div>
+        
   
         <!-- disponibility -->
         <div class="flex items-center ">
@@ -47,13 +48,13 @@
         </div>
   
         <!-- Description -->
-        <p class="text-[9px] sm:text-[10px] md:text-sm font-texte my-3">{{ projet.description }}</p>
+        <p class="text-[12px] sm:text-[12px] md:text-[15px] font-texte mb-2 pe-3">{{ projet.description }}</p>
   
         <!-- GitHub Link -->
         <a
           [href]="projet.github"
           target="_blank"
-          class="text-blue-400 underline hover:text-blue-300 text-[8px] sm:text-[10px] md:text-[12px] font-texte font-medium "
+          class="text-blue-400 underline hover:text-blue-300 text-[10px] font-texte font-medium "
         >
           {{ projet.github }}
         </a>

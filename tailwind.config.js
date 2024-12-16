@@ -15,7 +15,8 @@ module.exports = {
         nav: "#3A393C"
       },
       backgroundImage: {
-        degrader: 'radial-gradient(76.04% 106.72% at 88.26% 29.29%, rgba(255, 255, 255, 0) 37.85%, #000000 61.76%)',
+        'degrader-skills': 'radial-gradient(76.04% 106.72% at 88.26% 29.29%, rgba(255, 255, 255, 0) 37.85%, #000000 45%)',
+        'degrader-hero': 'radial-gradient(76.04% 106.72% at 88.26% 29.29%, rgba(255, 255, 255, 0) 37.85%, #000000 70%)',
         'gradient-radial': 'radial-gradient(134% 134% at 50% 50%, rgba(140, 105, 52, 0) 0%, rgba(242, 181, 90, 0.8) 100%)',
       },
       dropShadow: {
@@ -28,7 +29,8 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
-    require('tailwindcss-textshadow')
+    require('tailwindcss-textshadow'),
+    require('@tailwindcss/line-clamp')
   ]
 }
 
