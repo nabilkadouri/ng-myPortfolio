@@ -33,7 +33,7 @@ export const CAROUSEL_HERO = [
     title: 'Derrière chaque appel, une histoire à écrire et un défi à relever.',
     date : 'Pages Jaunes - ( 2011-2012)',
     description: "En 2011, Nabil Kadouri devient télévendeur BtoB aux Pages Jaunes, gérant un portefeuille de 500 clients. Expert en solutions publicitaires, il relève chaque jour le défi de convaincre et d'accompagner les entreprises locales dans un monde en mutation, transformant chaque appel en opportunité.",
-    imageSrc: '/uploads/pagesJaunes.webp',
+    imageSrc: '/uploads/pages-jaunes.webp',
     backgroundColor: '#E9A916',
     alt: 'Ligne Jaune'
   },

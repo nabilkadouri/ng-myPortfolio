@@ -9,22 +9,22 @@
       <img
         [src]="projet.image"
         alt="{{ projet.title }}"
-        class=" object-cover transition-transform duration-500 group-hover:scale-125  "
+        class=" object-cover transition-transform duration-500 group-hover:scale-125  h-full"
       />
   
       <!-- Content -->
       <div
-        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 p-3 h-full "
+        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 p-3 h-full py-5 "
       >
-        <h3 class="text-3xl md:text-4xl  xl:text-[25px] font-titre font-bold mb-3 text-center ">{{ projet.title }}</h3>
+        <h3 class="text-3xl md:text-4xl  xl:text-[25px] font-titre font-bold mb-2 text-center ">{{ projet.title }}</h3>
   
         <!-- SVG Icons -->
-        <div class="flex items-center gap-2 mb-2">
+        <div class="flex items-center gap-2 mb-1">
           <img
             *ngFor="let icon of projet.svgIcons"
             [src]="icon"
             alt="SVG Icon"
-            class="w-[28px]   h-auto mb-2"
+            class="w-[20px] h-auto mb-1"
           />
         </div>
   
@@ -47,16 +47,19 @@
         </div>
   
         <!-- Description -->
-        <p class="text-[14px]  md:text-[15px] font-texte mb-2 w-64">{{ projet.description }}</p>
+        <p class="text-[14px] md:text-[15px] font-texte mb-2 w-64">{{ projet.description }}</p>
   
         <!-- GitHub Link -->
-        <a
+         <div class="flex justify-center ">
+          <a
           [href]="projet.github"
           target="_blank"
-          class="text-blue-400 underline hover:text-blue-300 text-[12px] font-texte font-medium "
+          class= "bg-bleu py-1 px-2 rounded-lg text-center underline hover:text-bleu text-[12px] font-texte font-medium   "
         >
-          {{ projet.github }}
+          Voir projet
         </a>
+         </div>
+        
       </div>
     </div>
   </div>
