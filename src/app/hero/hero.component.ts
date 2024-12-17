@@ -28,6 +28,6 @@ export class HeroComponent {
   startAutoSlide() {
     setInterval(() => {
       this.nextSlide();
-    }, 6000);
+    }, 7000);
   }
 }
