@@ -3,25 +3,29 @@
   <div class="absolute inset-0 z-40 bg-degrader-hero"></div>
 
   <!-- Contenu du Hero -->
-  <div class="absolute top-1/2 z-50 w-full ps-7 lg:ps-36">
-    <div class="group absolute mt-7 flex h-full flex-col justify-center">
+  <div class="absolute top-1/2 z-50 w-full ps-7 lg:ps-36 group  ">
+    <div class="absolute mt-7 flex h-full flex-col justify-center">
+      <div class="group">
       <img src="/uploads/newphoto.webp"
         class="my-2 h-[100px] w-[100px] rounded-full bg-gradient-radial drop-shadow-custom filter sm:my-4 md:my-6 md:h-[150px] md:w-[150px] lg:h-[200px] lg:w-[200px]"
         alt="ma photo de profil" />
-      <h1
-        class="font-roboto sm:text-[28px] md:text-[42px] font-roboto sm:text-[32px]md:text-[42px] tracking-wide flex flex-col text-[28px] font-medium leading-tight text-shadow-custom sm:leading-snug sm:tracking-[0.25em] md:leading-normal md:tracking-[0.3em] lg:text-[48px]">
-        KADOURI
-        <span
-          class="font-roboto sm:text-[32px] md:text-[42px] tracking-wide text-[28px] font-medium text-shadow-custom sm:leading-snug sm:tracking-[0.25em] md:leading-normal lg:text-[48px]">
-          NABIL
-        </span>
-      </h1>
-      <h2
-        class="font-open-sans my-2  font-medium text-[#35E89D]  md:text-[28px] ">
-        Développeur web
-      </h2>
+        
+          <h1
+          class="font-roboto sm:text-[28px] md:text-[42px] font-roboto sm:text-[32px]md:text-[42px] tracking-wide flex flex-col text-[28px] font-medium leading-tight text-shadow-custom sm:leading-snug sm:tracking-[0.25em] md:leading-normal md:tracking-[0.3em] lg:text-[48px] ">
+          KADOURI
+          <span
+            class="font-roboto sm:text-[32px] md:text-[42px] tracking-wide text-[28px] font-medium text-shadow-custom sm:leading-snug sm:tracking-[0.25em] md:leading-normal lg:text-[48px]">
+            NABIL
+          </span>
+        </h1>
+        <h2
+          class="font-open-sans my-2  font-medium text-[#35E89D]  md:text-[28px] ">
+          Développeur web
+        </h2>
+        </div>
+      
       <div
-        class="hidden w-[250px] rounded-lg bg-opacity-90 text-[12px] transition-all duration-1000 ease-linear group-hover:block sm:w-[220px] sm:text-[13px] md:w-[400px] md:text-[16px] lg:w-[575px] lg:text-[18px]">
+        class="hidden w-[150px] rounded-lg bg-opacity-90 text-[10px] transition-all duration-1000 ease-linear group-hover:block sm:w-[220px] sm:text-[13px] md:w-[400px] md:text-[16px] lg:w-[450px] lg:text-[18px]">
         <strong>Saison 1 :</strong> Nabil est un créateur passionné qui
         transforme chaque défi en une opportunité d'innovation. Plongez dans son
         univers, où le code devient une aventure captivante...
@@ -63,6 +67,7 @@
       </div>
     </div>
   </div>
+
   <div class="relative h-full w-full overflow-hidden">
     <!-- Carrousel Vertical -->
     <div *ngFor="let item of carouselItems; let i = index"
@@ -73,7 +78,7 @@
         [ngStyle]="{ 'background-image': 'url(' + item.imageSrc + ')' }"></div>
 
       <!-- Texte au premier plan -->
-      <div class="text-background absolute right-3 z-40 w-[50%] px-4 sm:w-[50%] md:top-1/3 lg:w-[45%]">
+      <div class="text-background absolute right-0 md:right-60 z-40 w-[50%] px-4 sm:w-[50%] md:top-1/3 lg:w-[50%]">
         <p class="text-shadow-strong mb-1 text-[8px] sm:text-sm md:text-lg lg:text-xl">
           {{ item.date }}
         </p>
