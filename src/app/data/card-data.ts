@@ -9,7 +9,7 @@ export const CARDS_PROJECTS= [
     duration: '1h 48min',
     audience: 'Tous public',
     description: `Lamarlonance est un site vitrine conçu pour un chorégraphe professionnel. Il présente ses prestations avec un visuel attractif.`,
-    github: 'https://github.com/NabilKADOURI/lamarlonance',
+    github: 'https://lamarlonance.nk-dev.fr',
   },
   {
     image: '/uploads/cleanDressing.webp',
@@ -21,7 +21,7 @@ export const CARDS_PROJECTS= [
     duration: '2h 03min',
     audience: '7+',
     description: `Clean Dressing est une application web de gestion de pressings. Ce projet fictif a été réalisé dans le cadre de ma formation au titre professionnel Développeur.`,
-    github: 'https://github.com/NabilKADOURI/ng-cleanDressing',
+    github: 'https://clean-dressing.nk-dev.fr',
   },
 ];
 
