@@ -1,76 +1,71 @@
-<header  class="sticky left-0 top-0 z-50 w-full bg-transparent">
-  <nav
-    class="h-auto rounded-b-2xl bg-nav bg-opacity-50 shadow-md backdrop-blur-md md:mx-auto md:max-w-screen-xl"
-  >
+<header class="sticky left-0 top-0 z-50 w-full bg-transparent">
+  <nav class="h-auto rounded-b-2xl bg-nav bg-opacity-50 shadow-md backdrop-blur-md md:mx-auto md:max-w-screen-xl">
     <div class="md:flex md:justify-between">
       <div class="flex flex-wrap items-center justify-between py-3 pe-3">
         <a href="accueil">
           <img src="uploads/logo-myportfolio.webp" class="h-10" alt="Portfolio Logo" />
         </a>
+
+        <!-- Bouton menu burger -->
         <button
-          data-collapse-toggle="navbar-default"
+          (click)="toggleMenu()"
           type="button"
-          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-black sm:hidden hover:bg-gray-100 focus:ring-2 focus:ring-titre"
           aria-controls="navbar-default"
-          aria-expanded="false"
+          [attr.aria-expanded]="isMenuOpen"
         >
-          <span class="sr-only"></span>
-          <svg
-            class="h-5 w-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="ms-4 mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-2 lg:space-x-8 md:p-0 rtl:space-x-reverse "
-          >
-           
+
+        <!-- Menu de navigation -->
+        <div [class.hidden]="!isMenuOpen" class="w-full md:block md:w-auto" id="navbar-default">
+          <ul class="ms-4 mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-2 lg:space-x-8 md:p-0 rtl:space-x-reverse">
             <li>
               <a
                 href="#projet"
+                (click)="closeMenu()"
                 class="block px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
-                >Projets</a
               >
+                Projets
+              </a>
             </li>
-            
             <li>
               <a
                 href="#hard"
+                (click)="closeMenu()"
                 class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
-                >Hard skills</a
               >
+                Hard skills
+              </a>
             </li>
             <li>
               <a
                 href="#soft"
+                (click)="closeMenu()"
                 class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
-                >Soft skills</a
               >
+                Soft skills
+              </a>
             </li>
             <li>
               <a
                 href="#hobby"
+                (click)="closeMenu()"
                 class="block rounded px-3 py-2 text-white hover:bg-bleu md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
-                >Hobbies</a
               >
+                Hobbies
+              </a>
             </li>
             <li>
               <a
                 href="mailto:kadourinabil7@gmail.com"
+                (click)="closeMenu()"
                 class="block rounded px-3 py-2 text-bleu hover:bg-white md:hidden md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-bleu"
-                >Contact</a
               >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -79,13 +74,14 @@
         class="my-3 me-8 hidden rounded-2xl border-2 border-bleu hover:border-white px-3 py-2 md:flex md:items-center md:hover:text-white"
       >
         <a
-          href="mailto:kadourinabil7@gmail.com" target="_blank" rel="noopener noreferrer"
+          href="mailto:kadourinabil7@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           class="rounded font-medium text-bleu hover:bg-bleu md:hover:bg-transparent md:hover:text-white"
-          >Contactez-moi</a
         >
+          Contactez-moi
+        </a>
       </div>
     </div>
   </nav>
 </header>
-
-<app-hero></app-hero>
