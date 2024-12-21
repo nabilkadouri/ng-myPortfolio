@@ -6,7 +6,7 @@ export const CAROUSEL_IMAGES = [
   { src: '/uploads/php.webp', alt: 'PHP' },
   { src: '/uploads/symfony.webp', alt: 'Symfony' },
   { src: '/uploads/mysql.webp', alt: 'MySQL' },
-  { src: '/uploads/git.webp', alt: 'MySQL' }
+  { src: '/uploads/git.webp', alt: 'Git' }
 ];
 
 export const CAROUSEL_HERO = [

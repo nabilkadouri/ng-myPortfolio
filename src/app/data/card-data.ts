@@ -16,7 +16,7 @@ export const CARDS_PROJECTS= [
     title: 'Clean Dressing',
     svgIcons: ['/svg/html.svg', '/svg/css.svg', '/svg/bootstrap.svg','/svg/angular.svg','/svg/symfony.svg'],
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
     year: 2024,
     duration: '2h 03min',
     audience: '7+',
@@ -30,37 +30,37 @@ export const CARDS_SOFTSKILLS = [
     image: '/uploads/aisance.webp',
     title: `AISANCE RELATIONNELLE`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   },
   {
     image: '/uploads/curiosité.webp',
     title: `CURIOSITE`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   },
   {
     image: '/uploads/temps.webp',
     title: `GESTION DU TEMPS`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   },
   {
     image: '/uploads/autonomie.webp',
     title: `AUTONOMIE`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   },
   {
     image: '/uploads/debrouillardise.webp',
     title: `DEBROUILLARDISE`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   },
   {
     image: '/uploads/equipe.webp',
     title: `ESPRIT D'EQUIPE`,
     icone: '/svg/valid.svg',
-    disponibility: 'Inclus dans Portfolio prime',
+    disponibility: 'Inclus dans MyPortfolio',
   }
 ];
 
