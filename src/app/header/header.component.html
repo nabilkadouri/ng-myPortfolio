@@ -1,27 +1,33 @@
 <header class="sticky left-0 top-0 z-50 w-full bg-transparent">
-  <nav class="h-auto rounded-b-2xl bg-nav bg-opacity-50 shadow-md backdrop-blur-md md:mx-auto md:max-w-screen-xl">
+  <nav
+    class="h-auto rounded-b-2xl bg-nav bg-opacity-50 shadow-md backdrop-blur-md md:mx-auto md:max-w-screen-xl"
+  >
     <div class="md:flex md:justify-between">
       <div class="flex flex-wrap items-center justify-between py-3 pe-3">
-        <a href="accueil">
-          <img src="uploads/logo-myportfolio.webp" class="h-10" alt="Portfolio Logo" />
+        <a href="#">
+          <img src="/uploads/portfolio.png" class="h-10" alt="Portfolio Logo" />
         </a>
-
         <!-- Bouton menu burger -->
         <button
           (click)="toggleMenu()"
           type="button"
           class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-black sm:hidden hover:bg-gray-100 focus:ring-2 focus:ring-titre"
-          aria-controls="navbar-default"
+          [attr.aria-controls]="'navbar-default'"
           [attr.aria-expanded]="isMenuOpen"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-
         <!-- Menu de navigation -->
-        <div [class.hidden]="!isMenuOpen" class="w-full md:block md:w-auto" id="navbar-default">
-          <ul class="ms-4 mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-2 lg:space-x-8 md:p-0 rtl:space-x-reverse">
+        <div
+          *ngIf="isMenuOpen || screenWidth >= 768"
+          id="navbar-default"
+          class="w-full md:block md:w-auto"
+        >
+          <ul
+            class="ms-4 mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:space-x-2 lg:space-x-8 md:p-0 rtl:space-x-reverse"
+          >
             <li>
               <a
                 href="#projet"
@@ -85,3 +91,4 @@
     </div>
   </nav>
 </header>
+<app-hero></app-hero>
