@@ -1,59 +1,132 @@
-# MyPortfolio
+# 🌟 MyPortfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+## 📝 **Description**
+**MyPortfolio** est une application web interactive, développée en Angular, qui met en avant les compétences, les expériences professionnelles, et les projets personnels de **Nabil KADOURI**, développeur web. Ce portfolio offre une interface moderne et réactive pour explorer son parcours.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📋 **Prérequis**
+- ✅ **Angular CLI** version 15 ou supérieure
+- ✅ **Node.js** version 16 ou supérieure
+- ✅ **npm** (inclus avec Node.js)
+- ✅ Navigateur web moderne
 
+---
+
+## 🚀 **Installation**
+
+### 1️⃣ **Cloner le dépôt**
+Téléchargez le projet depuis GitHub :
+```bash
+git clone <URL_DU_DEPOT>
+cd angular-portfolio
+```
+
+### 2️⃣ **Installer les dépendances**
+Installez les dépendances nécessaires avec npm :
+```bash
+npm install
+```
+
+### 3️⃣ **Lancer l'application**
+Démarrez un serveur de développement local :
 ```bash
 ng serve
 ```
+Accédez à l'application sur [http://localhost:4200/](http://localhost:4200/).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🌟 **Fonctionnalités principales**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🌍 **Sections principales**
+1. **💼 Projets** : Présentation dynamique des projets avec des descriptions, des icônes et des liens GitHub.
+2. **⚙️ Hard Skills** : Carrousel interactif des compétences techniques.
+3. **🤝 Soft Skills** : Mise en avant des compétences humaines via un layout engageant.
+4. **🎨 Hobbies** : Affichage des centres d'intérêt à travers une grille.
+5. **📜 Expériences** : Section dédiée au parcours professionnel.
+6. **🔗 Navigation** : Header fixe pour une navigation fluide, et footer regroupant des liens utiles.
 
-```bash
-ng generate component component-name
+---
+
+## 🗂️ **Organisation des fichiers**
+
+### 🗃️ **Fichiers principaux**
+- **index.html** : Point d'entrée de l'application Angular.
+- **styles.css** : Fichier de styles globaux configuré avec Tailwind CSS.
+
+### 🧩 **Composants**
+- **Header** : Barre de navigation principale (`header.component.html`).
+- **Hero** : Section d’introduction avec le nom et le rôle (`hero.component.html`).
+- **Projets** : Affiche des projets dynamiques (`project.component.html`).
+- **Hard Skills** : Carrousel des compétences techniques (`hard-skill.component.html`).
+- **Soft Skills** : Grille des compétences humaines (`soft-skill.component.html`).
+- **Hobbies** : Présentation des centres d’intérêt (`hobby.component.html`).
+- **Expérience** : Détails sur les expériences professionnelles (`experience.component.html`).
+- **Footer** : Section finale regroupant des liens utiles (`footer.component.html`).
+
+### ⚙️ **Configuration**
+- **tailwind.config.js** : Configuration des thèmes et plugins Tailwind CSS.
+- **.gitignore** : Liste des fichiers ignorés pour Git.
+
+---
+
+## ✏️ **Exemples de Code**
+
+### **Composant des projets** (HTML)
+```html
+<section class="project-section">
+  <div *ngFor="let projet of projets">
+    <h3>{{ projet.title }}</h3>
+    <p>{{ projet.description }}</p>
+    <a [href]="projet.github" target="_blank">Voir projet</a>
+  </div>
+</section>
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### **Composant des compétences techniques** (CSS)
+```css
+.carousel {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
 
-```bash
-ng generate --help
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+### **Navigation principale**
+```html
+<header>
+  <nav>
+    <ul>
+      <li><a href="#projet">Projets</a></li>
+      <li><a href="#hard">Hard Skills</a></li>
+      <li><a href="#soft">Soft Skills</a></li>
+      <li><a href="#hobby">Hobbies</a></li>
+    </ul>
+  </nav>
+</header>
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🛠️ **Développement**
+Pour contribuer :
+1. Créez une branche :
+   ```bash
+   git checkout -b feature/ma-branche
+   ```
+2. Faites vos modifications.
+3. Soumettez une pull request sur GitHub.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 💬 **Remerciements**
+Développé avec passion par **Nabil KADOURI**. 
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📩 [Contactez-moi](mailto:kadourinabil7@gmail.com)
+🌐 [Mon LinkedIn](https://www.linkedin.com/in/nabil-kadouri/)
+🐙 [Mon GitHub](https://github.com/NabilKADOURI)
