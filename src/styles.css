@@ -2,34 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  /* Roboto : seulement les poids 400 et 700 */
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-  }
 
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-  }
 
-  /* Open Sans : seulement les poids 400 et 700 */
-  @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-  }
 
-  @font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-  }
-}
+
+
+
+
+
+
+
+
+
