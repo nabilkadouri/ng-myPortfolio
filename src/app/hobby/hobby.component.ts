@@ -10,4 +10,15 @@ import { CARDS_HOBBY } from '../data/card-data';
 })
 export class HobbyComponent {
   hobby = CARDS_HOBBY;
+
+ playVideo(event: Event) {
+  const video = event.target as HTMLVideoElement;
+  video.play();
+}
+
+pauseVideo(event: Event) {
+  const video = event.target as HTMLVideoElement;
+  video.pause();
+  video.currentTime = 0; // Réinitialisation au début
+}
 }

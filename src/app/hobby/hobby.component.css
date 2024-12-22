@@ -1,0 +1,16 @@
+/* Par défaut, la vidéo est masquée */
+video {
+  z-index: 10;
+  pointer-events: none;
+  transform: scale(1.2);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Au survol, la vidéo devient visible et interactive */
+.group:hover video {
+  opacity: 1;
+  transform: scale(1.5); /* Effet de zoom */
+  z-index: 20; /* S'assure que la vidéo est au premier plan */
+  pointer-events: auto; /* Permet d'interagir avec la vidéo */
+}

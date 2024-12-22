@@ -68,17 +68,21 @@ export const CARDS_HOBBY = [
   {
     image: '/uploads/equipe.webp',
     title: `Educateur sportif`,
+    video: '/videos/equipe.mp4', 
   },
   {
     image: '/uploads/gaming.webp',
     title: `Gaming`,
+    video: '/videos/gaming.mp4', 
   },
   {
     image: '/uploads/virtuel.webp',
     title: `Réalité virtuel`,
+    video: '/videos/virtuel.mp4', 
   },
   {
     image: '/uploads/sport.webp',
     title: `Vélo et Natation`,
+    video: '/videos/sport.mp4', 
   },
 ];
