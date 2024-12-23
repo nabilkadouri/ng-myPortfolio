@@ -3,7 +3,7 @@
   <div class="absolute inset-0 z-40 bg-degrader-hero"></div>
 
   <!-- Contenu du Hero -->
-  <div class="absolute top-1/2 z-50 w-full ps-7 lg:ps-36 group  ">
+  <div class="absolute top-1/2 z-50 w-full ps-7 lg:ps-36  group ">
     <div class="absolute mt-7 flex h-full flex-col justify-center">
       <div class="group">
       <img src="/uploads/newphoto.webp"
@@ -22,14 +22,15 @@
           class="font-open-sans my-2  font-medium text-[#35E89D]  md:text-[28px] ">
           Développeur web
         </h2>
-        </div>
-      
-      <div
+        <div
         class="hidden w-[150px] rounded-lg bg-opacity-90 text-[10px] transition-all duration-1000 ease-linear group-hover:block sm:w-[220px] sm:text-[13px] md:w-[400px] md:text-[16px] lg:w-[450px] lg:text-[18px]">
         <strong>Saison 1 :</strong> Nabil est un créateur passionné qui
         transforme chaque défi en une opportunité d'innovation. Plongez dans son
         univers, où le code devient une aventure captivante...
       </div>
+     
+      
+      
       <div class="my-2 flex items-center gap-2 sm:my-4 sm:gap-5 md:my-6 md:gap-6">
         <div
           class="duration-2000 flex gap-2 rounded-lg bg-white px-2 py-1 transition-all ease-in-out hover:bg-bleu hover:shadow-[0_0_2rem_rgba(59,130,246,0.8)] sm:gap-2">
@@ -58,7 +59,7 @@
             alt="" />
         </a>
       </div>
-
+    </div>
       <div class="flex items-center gap-1 sm:gap-2">
         <img src="/svg/panier.svg" alt="" class="w-[12px] sm:w-[14px] md:w-[18px]" />
         <p class="font-open-sans my-2 text-[12px] sm:my-4 sm:text-[13px] md:my-6 md:text-[16px] lg:text-[18px]">
@@ -89,7 +90,23 @@
           {{ item.description }}
         </p>
       </div>
+      
     </div>
+    <div>
+      <button
+      class="absolute top-3/4 md:top-[480px]   -translate-y-1/2 left-2/3 z-50 p-2 bg-blue-600 text-white rounded-full"
+      (click)="prevSlide()"
+    >
+      &lt;
+    </button>
+    <button
+      class="absolute top-3/4 md:top-[480px] ms-5 -translate-y-1/2 left-3/4 z-50 p-2 bg-blue-600 text-white rounded-full"
+      (click)="nextSlide()"
+    >
+      &gt;
+    </button>
+    </div>
+    
   </div>
   <div id="projet" class="pt-20 "></div>
 </section>

@@ -66,9 +66,9 @@ export const CARDS_SOFTSKILLS = [
 
 export const CARDS_HOBBY = [
   {
-    image: '/uploads/equipe.webp',
+    image: '/uploads/coach.webp',
     title: `Educateur sportif`,
-    // video: '/videos/equipe.mp4', 
+    video: '/videos/coach.mp4', 
   },
   {
     image: '/uploads/gaming.webp',
@@ -78,7 +78,7 @@ export const CARDS_HOBBY = [
   {
     image: '/uploads/virtuel.webp',
     title: `Réalité virtuel`,
-    // video: '/videos/virtuel.mp4', 
+    video: '/videos/virtuel.mp4', 
   },
   {
     image: '/uploads/sport.webp',

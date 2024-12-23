@@ -1,18 +1,40 @@
-<section  class=" m-auto lg:max-w-screen-xl px-7  mb-[30px] md:mb-[50px] lg:mb-[50px]">
-  <h2
-      class=" font-titre font-bold text-[20px]  md:text-[28px] lg:text-[36px] pb-6 " >
-      Hard skills populaires</h2>
-  <div class=" ">
+<section class="m-auto lg:max-w-screen-xl px-7 mb-[30px] md:mb-[50px] lg:mb-[50px]">
+  <h2 class="font-titre font-bold text-[20px] md:text-[28px] lg:text-[36px] pb-6">
+    Hard skills populaires
+  </h2>
+  <div class="relative w-full">
+    <!-- Flèche gauche -->
+    <button
+      class="absolute top-1/2 -translate-y-1/2 left-0 z-10 p-2 bg-gray-700 text-white rounded-full"
+      (click)="moveLeft()"
+    >
+      &lt;
+    </button>
+    <!-- Carrousel -->
     <div class="relative w-full carousel-container overflow-hidden">
-      <!-- Carrousel -->
-      <div  class=" flex transition-transform duration-700 ease-in-out gap-[20px] carousel"
-        [style.transform]="'translateX(-' + (currentIndex * 23) + '%)'">
-        <div *ngFor="let image of repeatedImages"
-          class="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px]  bg-gray-800 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] border border-gray-700">
-          <img [src]="image.src" [alt]="image.alt" class="w-full h-auto object-cover rounded-lg" />
+      <div
+        class="flex transition-transform duration-700 ease-in-out gap-[20px] carousel"
+        [style.transform]="'translateX(-' + (currentIndex * 23) + '%)'"
+      >
+        <div
+          *ngFor="let image of repeatedImages"
+          class="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] bg-gray-800 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] border border-gray-700"
+        >
+          <img
+            [src]="image.src"
+            [alt]="image.alt"
+            class="w-full h-auto object-cover rounded-lg"
+          />
         </div>
       </div>
     </div>
+    <!-- Flèche droite -->
+    <button
+      class="absolute top-1/2 -translate-y-1/2 right-0 z-10 p-2 bg-gray-700 text-white rounded-full"
+      (click)="moveRight()"
+    >
+      &gt;
+    </button>
   </div>
+  <div id="soft" class="pt-20 "></div>
 </section>
-<div id="soft" class="pt-20 "></div>

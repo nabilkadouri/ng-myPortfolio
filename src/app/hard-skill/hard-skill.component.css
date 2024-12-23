@@ -1,10 +1,18 @@
-/* Supprimer la barre de défilement */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel {
@@ -12,7 +20,7 @@
   transition: transform 0.7s ease-in-out;
 }
 
-.carousel-item {
-  flex-shrink: 0;
-  width: 100%;
+.carousel-container {
+  overflow: hidden;
+  position: relative;
 }
