@@ -1,12 +1,12 @@
-<section class="m-auto lg:max-w-screen-xl px-7 mb-[30px] md:mb-[50px] lg:mb-[50px]">
+<section class="m-auto lg:max-w-screen-xl px-7">
   <h2 class="font-titre font-bold text-[20px] md:text-[28px] lg:text-[36px] pb-6">
     Hard skills populaires
   </h2>
   <div class="relative w-full">
     <!-- Flèche gauche -->
     <button
-      class="absolute top-1/2 -translate-y-1/2 left-0 z-10 p-2 bg-gray-700 text-white rounded-full"
-      (click)="moveLeft()"
+      class="absolute top-1/2 -translate-y-1/2 left-0 z-10 text-4xl font-semibold  text-white bg-black bg-opacity-75 w-auto px-2 h-full shadow-[25px_0px_30px_rgba(0,0,0,7)]"
+      (click)="moveRight()"
     >
       &lt;
     </button>
@@ -14,7 +14,7 @@
     <div class="relative w-full carousel-container overflow-hidden">
       <div
         class="flex transition-transform duration-700 ease-in-out gap-[20px] carousel"
-        [style.transform]="'translateX(-' + (currentIndex * 23) + '%)'"
+        [style.transform]="'translateX(-' + (currentIndex * 20) + '%)'"
       >
         <div
           *ngFor="let image of repeatedImages"
@@ -30,11 +30,11 @@
     </div>
     <!-- Flèche droite -->
     <button
-      class="absolute top-1/2 -translate-y-1/2 right-0 z-10 p-2 bg-gray-700 text-white rounded-full"
-      (click)="moveRight()"
+      class="absolute top-1/2 -translate-y-1/2 right-0 z-10 text-4xl font-semibold  text-white bg-black bg-opacity-75 w-auto px-2 h-full shadow-[-25px_0px_30px_rgba(0,0,0,7)]"
+      (click)="moveLeft()"
     >
       &gt;
     </button>
   </div>
-  <div id="soft" class="pt-20 "></div>
+  <div id="soft"></div>
 </section>

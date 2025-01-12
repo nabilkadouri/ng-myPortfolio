@@ -6,28 +6,49 @@ import { CommonModule } from '@angular/common';
   selector: 'app-hero',
   imports: [CommonModule],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent {
-  currentIndex: number = 0;
-  carouselItems = CAROUSEL_HERO;
+  currentIndex = 0; // Index actuel du carrousel
+  carouselItems = CAROUSEL_HERO; // Données des slides
+  touchStartX = 0; // Position de départ du swipe
+  touchEndX = 0; // Position de fin du swipe
 
   ngOnInit(): void {
-    this.startAutoSlide();
+    this.startAutoSlide(); // Démarre le défilement automatique
   }
 
-  prevSlide() {
-    this.currentIndex =
-      this.currentIndex > 0 ? this.currentIndex - 1 : this.carouselItems.length - 1;
+  prevSlide(): void {
+    // Slide précédent
+    this.currentIndex = (this.currentIndex - 1 + this.carouselItems.length) % this.carouselItems.length;
   }
 
-  nextSlide() {
+  nextSlide(): void {
+    // Slide suivant
     this.currentIndex = (this.currentIndex + 1) % this.carouselItems.length;
   }
 
-  startAutoSlide() {
+  startAutoSlide(): void {
     setInterval(() => {
       this.nextSlide();
-    }, 7000);
+    }, 7000); // Change de slide toutes les 7 secondes
+  }
+
+  onTouchStart(event: TouchEvent): void {
+    this.touchStartX = event.touches[0].clientX; // Capture le point de départ
+  }
+
+  onTouchMove(event: TouchEvent): void {
+    this.touchEndX = event.touches[0].clientX; // Capture le point de fin
+  }
+
+  onTouchEnd(): void {
+    if (this.touchStartX - this.touchEndX > 50) {
+      // Swipe gauche
+      this.nextSlide();
+    } else if (this.touchEndX - this.touchStartX > 50) {
+      // Swipe droite
+      this.prevSlide();
+    }
   }
 }

@@ -1,67 +1,72 @@
-<section  class=" mb-[50px] sm:mb-[40px] md:mb-[50px] lg:mb-[60px] m-auto lg:max-w-screen-xl px-7 ">
-  <h2 class=" font-titre font-bold text-[20px] md:text-[28px] lg:text-[36px] pb-6">A découvrir : Projets du moment</h2>
-  <div class="flex flex-col items-center md:flex-row sm:grid-cols-3 lg:grid-cols-4 gap-[20px] ">
-    <div
-      *ngFor="let projet of projets"
-      class="relative group overflow-hidden transition-all duration-300 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] "
-    >
-      <!-- Image -->
-      <img
-        [src]="projet.image"
-        alt="{{ projet.title }}"
-        class=" object-cover transition-transform duration-500 group-hover:scale-125  h-full"
-      />
-  
-      <!-- Content -->
+<section  class="bg-[#0d0d0d]">
+
+  <div class="m-auto lg:max-w-screen-xl px-7" >
+    <h2 class=" font-titre font-bold text-[20px] md:text-[28px] lg:text-[36px] pb-6">A découvrir : Projets du moment</h2>
+    <div class="flex flex-col items-center md:flex-row sm:grid-cols-3 lg:grid-cols-4 gap-[20px] ">
       <div
-        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500  h-full px-4 py-2"
+        *ngFor="let projet of projets"
+        class="relative group overflow-hidden transition-all duration-300 rounded-lg shadow-[0_4px_10px_rgba(255,255,255,0.15),0_-4px_15px_rgba(0,0,0,0.8)] "
       >
-        <h3 class="text-2xl md:text-4xl  xl:text-[25px] font-titre font-bold mb-4 text-center ">{{ projet.title }}</h3>
-  
-        <!-- SVG Icons -->
-        <div class="flex items-center gap-2 mb-1">
-          <img
-            *ngFor="let icon of projet.svgIcons"
-            [src]="icon"
-            alt="SVG Icon"
-            class="w-[25px] h-auto mb-1"
-          />
-        </div>
-  
-        <!-- disponibility -->
-        <div class="flex items-center ">
-          <img
-          [src]="projet.icone" 
-          alt="Icone disponibility"
-          class="w-4"
+        <!-- Image -->
+        <img
+          [src]="projet.image"
+          alt="{{ projet.title }}"
+          class=" object-cover transition-transform duration-500 group-hover:scale-125  h-full"
         />
-          <p class="text-[14px] md:text-[16px] font-texte ps-1 font-medium">{{ projet.disponibility }}</p>
+    
+        <!-- Content -->
+        <div
+          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500  h-full px-4 py-2"
+        >
+          <h3 class="text-2xl md:text-4xl  xl:text-[25px] font-titre font-bold mb-4 text-center ">{{ projet.title }}</h3>
+    
+          <!-- SVG Icons -->
+          <div class="flex items-center gap-2 mb-1">
+            <img
+              *ngFor="let icon of projet.svgIcons"
+              [src]="icon"
+              alt="SVG Icon"
+              class="w-[25px] h-auto mb-1"
+            />
+          </div>
+    
+          <!-- disponibility -->
+          <div class="flex items-center ">
+            <img
+            [src]="projet.icone" 
+            alt="Icone disponibility"
+            class="w-4"
+          />
+            <p class="text-[14px] md:text-[16px] font-texte ps-1 font-medium">{{ projet.disponibility }}</p>
+            
+          </div>
+    
+          <!-- Year, Duration, Audience -->
+          <div class="flex items-center  text-[14px] md:text-[16px] font-texte font-normal my-2 ">
+            <span class="">{{ projet.year }}</span>
+            <span class="mx-2">{{ projet.duration }}</span>
+            <span class="bg-nav rounded-md p-1 ms-10">{{ projet.audience }}</span>
+          </div>
+    
+          <!-- Description -->
+          <p class="text-[15px] md:text-[15px] font-texte mb-2 text-justify ">{{ projet.description }}</p>
+    
+          <!-- GitHub Link -->
+           <div class="flex justify-center ">
+            <a
+            [href]="projet.github"
+            target="_blank"
+            class= "bg-bleu py-1 px-2 rounded-lg text-center underline hover:text-bleu text-[12px] font-texte font-medium   "
+          >
+            Voir projet
+          </a>
+           </div>
           
         </div>
-  
-        <!-- Year, Duration, Audience -->
-        <div class="flex items-center  text-[14px] md:text-[16px] font-texte font-normal my-2 ">
-          <span class="">{{ projet.year }}</span>
-          <span class="mx-2">{{ projet.duration }}</span>
-          <span class="bg-nav rounded-md p-1 ms-10">{{ projet.audience }}</span>
-        </div>
-  
-        <!-- Description -->
-        <p class="text-[15px] md:text-[15px] font-texte mb-2 text-justify ">{{ projet.description }}</p>
-  
-        <!-- GitHub Link -->
-         <div class="flex justify-center ">
-          <a
-          [href]="projet.github"
-          target="_blank"
-          class= "bg-bleu py-1 px-2 rounded-lg text-center underline hover:text-bleu text-[12px] font-texte font-medium   "
-        >
-          Voir projet
-        </a>
-         </div>
-        
       </div>
     </div>
   </div>
+
+  
 </section>
-<div id="hard" class="pt-20 "></div>
+<div id="hard" ></div>
