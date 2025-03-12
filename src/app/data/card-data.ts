@@ -1,18 +1,7 @@
 export const CARDS_PROJECTS= [
+  
   {
-    image: '/uploads/lamarlonance.webp',
-    title: 'Lamarlonance',
-    svgIcons: ['/svg/html.svg', '/svg/css.svg', '/svg/bootstrap.svg','/svg/php.svg'],
-    icone: '/svg/panier.svg',
-    disponibility: 'Disponible à l’achat ou la location',
-    year: 2024,
-    duration: '1h 48min',
-    audience: 'Tous public',
-    description: `Lamarlonance est un site vitrine conçu pour un chorégraphe professionnel. Il présente ses prestations avec un visuel attractif.`,
-    github: 'https://lamarlonance.nk-dev.fr',
-  },
-  {
-    image: '/uploads/cleanDressing.webp',
+    image: '/uploads/projet_cleanDressing.webp',
     title: 'Clean Dressing',
     svgIcons: ['/svg/html.svg', '/svg/css.svg', '/svg/bootstrap.svg','/svg/angular.svg','/svg/symfony.svg'],
     icone: '/svg/valid.svg',
@@ -21,7 +10,31 @@ export const CARDS_PROJECTS= [
     duration: '2h 03min',
     audience: '7+',
     description: `Clean Dressing est une application web de gestion de pressings. Ce projet fictif a été réalisé dans le cadre de ma formation au titre professionnel Développeur.`,
-    github: 'https://clean-dressing.nk-dev.fr',
+    github: 'https://github.com/nabilkadouri/ng-cleanDressing',
+  },
+  {
+    image: '/uploads/projet_lamarlonance.webp',
+    title: 'Lamarlonance',
+    svgIcons: ['/svg/html.svg', '/svg/css.svg', '/svg/bootstrap.svg','/svg/php.svg'],
+    icone: '/svg/panier.svg',
+    disponibility: 'Disponible à l’achat ou la location',
+    year: 2024,
+    duration: '1h 48min',
+    audience: 'Tous public',
+    description: `Lamarlonance est un site vitrine conçu pour un chorégraphe professionnel. Il présente ses prestations avec un visuel attractif.`,
+    github: 'https://github.com/nabilkadouri/lamarlonance',
+  },
+  {
+    image: '/uploads/projet_happy_finance.webp',
+    title: 'Happy-finance',
+    svgIcons: ['/svg/html.svg', '/svg/css.svg', '/svg/tailwind.svg','/svg/angular.svg'],
+    icone: '/svg/panier.svg',
+    disponibility: 'Disponible à l’achat ou la location',
+    year: 2024,
+    duration: '1h 48min',
+    audience: 'Tous public',
+    description: `Happy finance est un site réalisé en collaboration pour un coutier en prêt immobilier. Il présente ses services et dispose d'un simulateur de prêt et de rachat.`,
+    github: 'https://github.com/yndevelopers/ng-happy-finance',
   },
 ];
 

@@ -1,0 +1,23 @@
+.absolute.bottom-0.left-0.right-0.bg-black.bg-opacity-90.transform.translate-y-full.group-hover\:translate-y-0.transition-transform.duration-500.h-full.px-4.py-2 {
+  overflow: auto;
+}
+
+.text-2xl.md\:text-4xl.xl\:text-\[25px\].font-titre.font-bold.mb-4.text-center {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-\[15px\].md\:text-\[15px\].font-texte.mb-2.text-justify {
+  overflow-y: auto; 
+  max-height: 150px; 
+  
+}
+
+.flex.items-center.text-\[14px\].md\:text-\[16px\].font-texte.font-normal.my-2 {
+  flex-shrink: 1;
+}
+
+.group-hover\:translate-y-0{
+  max-height: 500px; 
+}
