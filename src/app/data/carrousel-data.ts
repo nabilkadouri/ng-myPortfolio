@@ -1,12 +1,15 @@
 // src/app/data/carrousel-data.ts
 export const CAROUSEL_IMAGES = [
-  { src: '/uploads/bootstrap.webp', alt: 'Logo Bootstrap' },
-  { src: '/uploads/javascript.webp', alt: 'Logo JavaScript' },
-  { src: '/uploads/angular.webp', alt: 'Logo Angular' },
-  { src: '/uploads/php.webp', alt: 'Logo PHP' },
-  { src: '/uploads/symfony.webp', alt: 'Logo Symfony' },
-  { src: '/uploads/mysql.webp', alt: 'Logo MySQL' },
-  { src: '/uploads/git.webp', alt: 'Logo Git' }
+  { src: '/logos/bootstrap.png', alt: 'Logo Bootstrap' },
+  { src: '/logos/javascript.png', alt: 'Logo JavaScript' },
+  { src: '/logos/angular.png', alt: 'Logo Angular' },
+  { src: '/logos/php.png', alt: 'Logo PHP' },
+  { src: '/logos/symfony.png', alt: 'Logo Symfony' },
+  { src: '/logos/mySql.png', alt: 'Logo MySQL' },
+  { src: '/logos/git.png', alt: 'Logo Git' },
+  { src: '/logos/tailwind.png', alt: 'Logo Git' },
+  { src: '/logos/java.png', alt: 'Logo Git' },
+
 ];
 
 export const CAROUSEL_HERO = [
